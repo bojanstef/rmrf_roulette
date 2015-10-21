@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "You have a 1 in 6 chance of erasing your entire filesystem"
+sleep 1
 echo "How many times are you willing to roll the dice: "
 read num_rolls # Have to do some validation to make sure only numbers are allowed.
 
@@ -10,6 +11,7 @@ do
     if [ "$result" = 0 ];
     then
         echo "Lucky break #$i."
+        sleep 1.5 # Create suspens1
     else
         echo "Say goodbye to your computer."
         # Call a function to display a lot of random characters.
