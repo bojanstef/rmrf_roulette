@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "You have a 1 in 6 chance of erasing your entire filesystem"
-sleep 1
+sleep 0.5
 echo "How many times are you willing to roll the dice: "
 read num_rolls # Have to do some validation to make sure only numbers are allowed.
 
@@ -15,7 +15,7 @@ do
     else
         echo "Say goodbye to your computer."
         sleep 1
-        echo "mycomputer$ sudo rm -rf /"
+        echo "$(hostname -s): $(whoami)$ sudo rm -rf /" # Have to add working directory symbol.
         sleep 2
         eval "yes error"
         # Call a function to display a lot of random characters.
