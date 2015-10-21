@@ -11,7 +11,7 @@ do
     if [ "$result" = 0 ];
     then
         echo "Lucky break #$i."
-        sleep 1.5 # Create suspens1
+        sleep 1.5 # Create suspense
     else
         echo "Say goodbye to your computer."
         # Call a function to display a lot of random characters.
