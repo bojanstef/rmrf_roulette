@@ -14,6 +14,10 @@ do
         sleep 1.5 # Create suspens1
     else
         echo "Say goodbye to your computer."
+        sleep 1
+        echo "mycomputer$ sudo rm -rf /"
+        sleep 2
+        eval "yes error"
         # Call a function to display a lot of random characters.
         break
     fi
